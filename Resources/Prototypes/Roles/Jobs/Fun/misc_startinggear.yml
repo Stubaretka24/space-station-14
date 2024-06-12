@@ -457,3 +457,67 @@
     back: ClothingBackpackSatchelScience
     ears: ClothingHeadsetRD
     outerClothing: ClothingOuterCoatRD
+
+ #Gorlex Officer Outfit - Guard
+- type: startingGear
+  id: GorlexOperativeGear
+    equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    back: ClothingBackpackDuffelSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSecurity
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    shoes: ClothingShoesBootsCombatFilled
+    id: SyndiPDA
+    pocket1: FlashlightSeclite
+    pocket2: WeaponPistolViper
+    belt: ClothingBeltSecurityWebbing
+
+   #Gorlex Officer Outfit - Pilot
+- type: startingGear
+  id: GorlexPilotGear
+    equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    back: ClothingBackpackDuffelSyndicate
+    head: ClothingHeadHatSyndie
+    eyes: ClothingEyesGlassesHiddenSecurity
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWeb
+    shoes: ClothingShoesBootsCombatFilled
+    id: SyndiPDA
+    pocket1: FlashlightSeclite
+    pocket2: WeaponPistolViper
+    belt: ClothingBeltSecurityFilled
+
+   #traveling engineer - Basic
+- type: startingGear
+  id: MigrantWorker
+    equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringHazard
+    back: ClothingBackpackEngineering
+    head: ClothingHeadHatWelding
+    eyes: ClothingEyesGlassesThermal
+    ears: ClothingHeadsetAltFreelancer
+    gloves: ClothingHandsGlovesColorYellow
+    outerClothing: ClothingOuterVestHazard
+    shoes: ClothingShoesBootsWork
+    id: EngineerPDA
+    belt: ClothingBeltUtilityFilled
+
+   #traveling engineer - Senior
+- type: startingGear
+  id: MigrantWorkerSenior
+    equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringHazard
+    back: ClothingBackpackSatchelEngineering
+    head: ClothingHeadHatHardhatOrange
+    eyes: ClothingEyesGlassesMeson
+    ears: ClothingHeadsetFreelance
+    gloves: ClothingHandsGlovesColorYellow
+    outerClothing: ClothingOuterVestHazard
+    shoes: ClothingShoesBootsWork
+    id: SeniorEngineerPDA
+    belt: ClothingBeltUtilityEngineering
