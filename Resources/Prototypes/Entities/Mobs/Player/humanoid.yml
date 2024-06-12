@@ -831,3 +831,165 @@
         settings: short
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
+
+# Gorlex Security Officer
+
+- type: entity
+  name: Gorlex Securities Officer spawner
+  id: GorlexSecuritiesOfficerSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Structures/Decoration/banner.rsi
+        state: banner_syndicate
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidGorlexSecuritiesOfficer
+
+- type: entity
+  id: RandomHumanoidGorlexSecuritiesOfficer
+  name: Gorlex Securities Officer ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: RandomHumanoidSpawner
+      settings: GorlexLLCofficer
+
+- type: randomHumanoidSettings
+  id: GorlexLLCofficer
+  parent: EventHumanoid
+  components:
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+    - type: GhostRole
+      name: ghost-role-information-gorlex-securities-officer-name
+      description: ghost-role-information-gorlex-securities-officer-description
+      rules: ghost-role-information-gorlex-securities-officer-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ GorlexOperativeGear ]
+
+# Gorlex Security Pilot
+
+- type: entity
+  name: Gorlex Securities Pilot spawner
+  id: GorlexSecuritiesPilotSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Structures/Decoration/banner.rsi
+        state: banner_syndicate
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidGorlexSecuritiesPilot
+
+- type: entity
+  id: RandomHumanoidGorlexSecuritiesPilot
+  name: Gorlex Securities Officer ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: RandomHumanoidSpawner
+      settings: GorlexSecuritiesPilot
+
+- type: randomHumanoidSettings
+  id: GorlexSecuritiesPilot
+  parent: EventHumanoid
+  components:
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+    - type: GhostRole
+      name: ghost-role-information-gorlex-securities-officer-name
+      description: ghost-role-information-gorlex-securities-officer-description
+      rules: ghost-role-information-gorlex-securities-officer-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ GorlexPilotGear ]
+
+      # Traveling Engineer
+
+- type: entity
+  name: traveling engineer
+  id: TravelingEngineerSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Clothing\Head\Welding\welding.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomHumanoidTravelingEngineer
+
+- type: entity
+  id: RandomHumanoidTravelingEngineer
+  name: traveling engineer ghost role
+  components:
+    - type: Sprite
+      sprite: Clothing\Head\Welding\welding.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: TravelingEngineer
+
+- type: randomHumanoidSettings
+  id: TravelingEngineer
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: ghost-role-information-traveling-engineer-name
+      description: ghost-role-information-traveling-engineer-description
+      rules: ghost-role-information-traveling-engineer-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ MigrantWorker ]
+
+        # Traveling Engineer Senior
+
+- type: entity
+  name: traveling engineer senior
+  id: TravelingEngineerSeniorSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Clothing\Head\Welding\paintedwelding.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomHumanoidTravelingEngineerSenior
+
+- type: entity
+  id: RandomHumanoidTravelingEngineerSenior
+  name: traveling engineer ghost role
+  components:
+    - type: Sprite
+      sprite: Clothing\Head\Welding\welding.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: TravelingEngineerSenior
+
+- type: randomHumanoidSettings
+  id: TravelingEngineerSenior
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: ghost-role-information-traveling-engineer-name
+      description: ghost-role-information-traveling-engineer-description
+      rules: ghost-role-information-traveling-engineer-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ MigrantWorkerSenior ]
