@@ -177,3 +177,9 @@ ghost-role-information-artifact-name = Разумный артефакт
 ghost-role-information-artifact-description =
     Осуществляйте свои инопланетные прихоти.
     Принудительно активируйте свои узлы во благо или во зло.
+ghost-role-information-gorlex-securities-officer-name = Сотрудник Gorlex LCC
+ghost-role-information-gorlex-securities-officer-description = Вы - охранник из Golex Securities LCC, прибывший в сектор вместе с товарищами ради заработка.
+ghost-role-information-gorlex-securities-officer-rules = Защищайте экипаж за деньги.
+ghost-role-information-traveling-engineer-name = Путешествующий инженер
+ghost-role-information-traveling-engineer-description = Вы - путешествующий инженер из частной компании, прибывший в сектор для заработка.
+ghost-role-information-traveling-engineer-rules = Чините станцию за деньги.
