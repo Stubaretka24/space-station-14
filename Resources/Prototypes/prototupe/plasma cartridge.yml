@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: PlasmaEnergyCatrtridge
+  result: PlasmaEnergyCatrtridge
+  completetime: 5
+  materials:
+    Steel: 100
+    Plasma: 300

@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: PlasmaCutters
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
+    state: icon
+  product: CrateCargoPlasmaCutters
+  cost: 2000
+  category: cargoproduct-category-name-cargo
+  group: market

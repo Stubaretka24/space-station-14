@@ -1,0 +1,12 @@
+- type: entity
+  id: CrateCargoPlasmaCutters
+  parent: CratePrivateSecure
+  name: plasma cutters crate
+  description: It contains two plasma cutters and one cartridge for each of them.
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPlasmaCutter
+    - id: WeaponPlasmaCutter
+    - id: PlasmaEnergyCatrtridge
+    - id: PlasmaEnergyCatrtridge
