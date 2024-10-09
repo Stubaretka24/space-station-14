@@ -38,6 +38,7 @@ namespace Content.Shared.Damage
         [IncludeDataField(customTypeSerializer: typeof(DamageSpecifierDictionarySerializer), readOnly: true)]
         public Dictionary<string, FixedPoint2> DamageDict { get; set; } = new();
 
+
         /// <summary>
         ///     Returns a sum of the damage values.
         /// </summary>

@@ -29,6 +29,7 @@
   - type: Appearance
   - type: PowerCellVisuals
   - type: Riggable
+  - type: GatheringLaser
   - type: HitscanBatteryAmmoProvider
     proto: PlasmaLaser
     fireCost: 20

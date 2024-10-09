@@ -25,6 +25,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Containers;
+using FastAccessors;
 
 namespace Content.Server.Weapons.Ranged.Systems;
 
@@ -244,6 +245,9 @@ public sealed partial class GunSystem : SharedGunSystem
 
                                 // TODO get fallback position for playing hit sound.
                                 PlayImpactSound(hitEntity, dmg, hitscan.Sound, hitscan.ForceSound);
+
+                                var hitscanShotEvent = new GotHitByHitscanEvent(gunUid, hitEntity);
+                                RaiseLocalEvent(hitEntity, hitscanShotEvent);
                             }
 
                             if (user != null)

@@ -647,6 +647,7 @@
       toolWhitelist:
         tags:
           - Pickaxe
+          - PlasmaCutter
     - type: Damageable
       damageContainer: Inorganic
       damageModifierSet: Metallic

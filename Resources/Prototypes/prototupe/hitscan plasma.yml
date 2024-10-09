@@ -1,6 +1,8 @@
 - type: hitscan
   id: PlasmaLaser
   maxLength: 30
+  components:
+    - type: GatheringLaser
   damage:
     types:
       Heat: 2

@@ -64,6 +64,7 @@
       shader: unshaded
   - type: Item
     sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
+  - type: GatheringLaser
   - type: MagazineVisuals
     magState: mag
     steps: 5

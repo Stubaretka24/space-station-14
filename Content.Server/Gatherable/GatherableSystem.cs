@@ -3,6 +3,7 @@ using Content.Server.Gatherable.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Tag;
 using Content.Shared.Weapons.Melee.Events;
+using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Whitelist;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
@@ -27,13 +28,27 @@ public sealed partial class GatherableSystem : EntitySystem
 
         SubscribeLocalEvent<GatherableComponent, ActivateInWorldEvent>(OnActivate);
         SubscribeLocalEvent<GatherableComponent, AttackedEvent>(OnAttacked);
+        SubscribeLocalEvent<GatherableComponent, GotHitByHitscanEvent>(OnLaserAttacked);
+
         InitializeProjectile();
+    }
+
+    private void OnLaserAttacked(Entity<GatherableComponent> gatherable, ref GotHitByHitscanEvent args)
+    {
+        if (TryComp<GatheringLaserComponent>(args.WeaponUsed, out var component))
+        {
+            Gather(gatherable, args.WeaponUsed);
+        }
     }
 
     private void OnAttacked(Entity<GatherableComponent> gatherable, ref AttackedEvent args)
     {
+        Log.Error($"Attacked {args.Used.ToString()}");
+
         if (_whitelistSystem.IsWhitelistFailOrNull(gatherable.Comp.ToolWhitelist, args.Used))
+        {
             return;
+        }
 
         Gather(gatherable, args.User);
     }
